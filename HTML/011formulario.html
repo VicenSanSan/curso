@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Probando formularios</title>
+    <style type="text/css">
+      p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Nombre <input type="text" name="nombre" /></p>
+    <p>Apellidos <input type="text" name="Apellidos" /></p>
+    <p>Residente <input type="checkbox" name="Residente" /></p>
+    <p>Fecha de incorporacion <input type="date" name="fechaInc" /></p>
+    <p>Elige color <input type="color" name="color" /></p>
+    <p>Mensaje <input type="text" name="color" /></p>
+    <p>
+      Pulsando "shift" puedes seleccionar varios
+      <select name="pais" multiple>
+        <option>España</option>
+        <option>Italia</option>
+        <option>Portugal</option>
+        <option>Marruecos</option>
+      </select>
+    </p>
+    <p>
+      <textarea cols="20" rows="10"> Caja de texto con muchas lineas </textarea>
+    </p>
+    <p>Nombre <input type="button" value="aceptar" /></p>
+
+    <p>
+      <select name="colores">
+        <optgroup label="grupoColores">
+          <option>negro</option>
+          <option>gris</option>
+          <option>azul</option>
+          <option>verde</option>
+        </optgroup>
+        
+        <optgroup label="grupoPersonas">
+          <option>Antonio</option>
+          <option>Miguel</option>
+          <option>Pablo</option>
+          <option>Felipe</option>
+        </optgroup>
+      </select>
+    </p>
+  </body>
+</html>

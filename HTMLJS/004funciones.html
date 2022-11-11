@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML CON JAVASCRIPT</title>
+    <script type="text/javascript">
+      function mensaje() {
+        /* ejemplo 1
+      var objeto = { nombre: "Pedro", edad: 20, estajubilado:function(){
+            if (this.edad >= 65) 
+            { 
+                return true
+            }
+             else {
+                return false
+            };
+        }};
+        console.log(objeto.nombre);
+        console.log(objeto.edad);
+        console.log(objeto.estajubilado());
+*/
+        /*  var mip=document.getElementById("miparrafo")
+        console.log(mip.firstChild)
+        mip.firstChild.nodeValue="Ahora cambio la página"
+        */
+        var parrafos = document.getElementById(bloqueP);
+        console.dir(parrafos);
+        /*var lista = parrafos.children();
+        console.log(lista)
+        for (var i = 0; i <= lista.length; i + 1) {
+          console.log(lista[i].firstChild.nodeValue);
+          lista[i].firstChild.nodeValue.toUpperCase();
+        }*/
+      }
+    </script>
+  </head>
+  <body>
+    hola
+    <input type="button" value="pulsar" onclick="mensaje()" />
+    <p id="miparrafo">contenido de la etiqueta p</p>
+    <div id="bloqueP">
+      <p>Hola</p>
+      <p>Qué tal</p>
+      <p>Saludos desde Santander</p>
+    </div>
+  </body>
+</html>
