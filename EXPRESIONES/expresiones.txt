@@ -1,0 +1,31 @@
+factura1.doc
+factura2.doc
+factura3.doc
+factura..?\.doc
+
+
+Factura1.txt bla 
+Factura2.txt bli blo 
+factura3.doc ketea 
+factura99.git adfasldkjhaslkdasf
+/[Ff]actura..?\....
+
+[Ff]actura[\d].?\....
+[Ff]actura[0-9].?\....
+[Ff]actura[0123456789].?\....
+[Ff]actura\d?\d\....  
+
+
+\d{7,8}-?[A-Za-z]
+entregamos la compra a 10142812L
+entregamos la compra a 10142812L
+entregamos la compra a 10142812L
+entregamos la compra a 7142812-L
+entregamos la compra a 7142812-m
+
+/#[a-zA-Z0-9]{6}
+expresion para colores en paginas web
+
+body{background-color:#ffccab;}
+p{background-color:#abfc01;}
+​

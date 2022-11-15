@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Probando formularios</title>
+  
+  <script type="text/javascript">
+      function enviar() {
+        alert("hola");
+      }
+    </script>
+
+  </head>
+  <body>
+    <form id="formulario" onsubmit="enviar()" action="insertar.php">
+      <p>
+        Número
+        <input
+          type="text"
+          name="Número"
+          required
+          pattern="\d{1,2}"
+          placeholder="Introduce número de factura"
+        />
+      </p>
+      <p>
+        Concepto
+        <input
+          type="text"
+          name="Concepto"
+          required
+          pattern="[a-zA-Z]{3,10}"
+          placeholder="Introduce texto"
+        />
+      </p>
+      <p>
+        Importe
+        <input
+          type="text"
+          name="Importe"
+          required
+          pattern="\d{1,4}"
+          placeholder="Introduce importe"
+        />
+      </p>
+
+      <input type="submit" value="aceptar" />
+    </form>
+  </body>
+</html>
