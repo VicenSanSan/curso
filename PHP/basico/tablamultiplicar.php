@@ -7,13 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="suma.php">
-    <p>
-        NÚMERO 1<input type="text" name="numero1"/>
-        NÚMERO 2<input type="text" name="numero2"/>
-
-        <input type="submit"/>
-    </p>
-    </form>
+    <table border="1px solid black">
+        <?php for ($i=0;$i<10;$i++) {?>
+            <tr>
+                <td><?=($i*7)?></td>
+            </tr>
+            <?php }?>
+    </table>
 </body>
 </html>
