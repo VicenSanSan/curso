@@ -8,7 +8,13 @@
   
   <script type="text/javascript">
       function enviar() {
-        alert("hola");
+        var forumulario=document.getElementById("formulario")
+        if (formulario.reportValidity()){
+            return true;
+        }else{
+            return false;
+        }
+        
       }
     </script>
 
