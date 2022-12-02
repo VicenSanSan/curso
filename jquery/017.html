@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .gastoalto{
+        background-color: crimson;color:white;
+      }
+    </style>
+    <script type="text/javascript">
+
+      $(document).ready(function () {
+        $("tr td:last-child").each(function(){
+          var importe=parseInt($(this).text());
+          if (importe>300){
+            $(this).addClass("gastoalto");
+          }
+
+        }); 
+      });
+    </script>
+  </head>
+  <body>
+    <table>
+    <tr>
+      <th>NÚMERO</th>
+      <th>CONCEPTO</th>
+      <th>IMPORTE</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>televisor</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>ordenador</td>
+      <td>200</td>
+    </tr>
+    </table>
+  </body>
+</html>

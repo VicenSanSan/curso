@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+ 
+ <script type ="text/javascript">
+   $(document).ready(function(){
+    
+    $("#ocultar").click(function(){
+      $("img").slideUp();
+    });
+    $("#mostrar").click(function(){
+      $("img").slide();
+    })
+   });
+</script>
+
+</head>
+<body>
+   <img src="descarga.jpg" width="30%" height="30%"/>
+   <input type="button" id="ocultar" value ="ocultar"/>
+   <input type="button" id="mostrar" value ="mostrar"/>
+    
+</body>
+</html>
