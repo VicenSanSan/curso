@@ -17,25 +17,26 @@ $resultado = $conn->query($sql);
   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  
-  <script src="https://code.jquery.com/jquery-3.6.1.js"
-        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
 
-       $(".alquileres").click(function(e) {
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
 
-                var dni=$(this).data("dni");
-                e.preventDefault();
-                $.get("verAlquilerClienteAjax.php?dni="+dni,function(datos) {
+<script type="text/javascript">
+  $(document).ready(function () {
 
-                   $("#veralquileres").empty().append(datos);
+    $(".alquileres").click(function (e) {
 
-                })
+      var dni = $(this).data("dni");
+      e.preventDefault();
+      $.get("verAlquilerClienteAjax.php?dni=" + dni, function (datos) {
 
-       })
+        $("#veralquileres").empty().append(datos);
+
+      })
+
     })
-    </script>
+  })
+</script>
 </head>
 
 <body>
@@ -64,22 +65,23 @@ $resultado = $conn->query($sql);
           <a href="borrarcliente.php?dni=<?= $fila["dni"] ?>" class="btn btn-primary">Borrar</a>
         </td>
         <td>
-          <a href="verAlquilerCliente.php?dni=<?= $fila["dni"] ?>" class="btn btn-primary">VerAlquilerClientes</a>
+          <a href="verAlquilerCliente.php?dni=<?= $fila["dni"] ?>" class="btn btn-primary">Ver alquiler</a>
         </td>
         <td>
-          <a href="verAlquilerClienteAjax.php?dni=<?= $fila["dni"] ?>" class="btn btn-primary alquileres" data-dni="<?=$fila["dni"]?>">VerAjax</a>
+          <a href="verAlquilerClienteAjax.php?dni=<?= $fila["dni"] ?>" class="btn btn-primary alquileres"
+            data-dni="<?= $fila["dni"] ?>">Ver Ajax</a>
         </td>
-        
-    </tr>
 
-    <?php } ?>
-    <p>
- 
-    </p>
-  </table>
-  <a class="btn btn-primary"  href="formCliente2.html">Nuevo Cliente</a>
-  <div id="veralquileres">
-                    Zona de alquileres
+      </tr>
+
+      <?php } ?>
+      <p>
+
+      </p>
+    </table>
+    <a class="btn btn-primary" href="formCliente2.html">Nuevo Cliente</a>
+    <div id="veralquileres">
+      Zona de alquileres
     </div>
   </div>
 </body>
