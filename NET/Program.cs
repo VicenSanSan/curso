@@ -1,6 +1,7 @@
 ﻿using System;
 using net1;
 using MySql.Data.MySqlClient;
+using System.Collections.Generic;
 
 namespace net1
 {
@@ -8,19 +9,41 @@ namespace net1
     {
         static void Main(string[] args)
         {
-
-            PersonaRepository repo=new PersonaRepository();
-            MySqlConnection conn=repo.obtenerConexion();
-
-            var comando = conn.CreateCommand();
-            comando.CommandText = "select * from Personas";
-
-            var reader = comando.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
-            while (reader.Read())
+            PersonaRepository repo = new PersonaRepository();
+            List<PersonaNueva> lista = repo.BuscarTodas();
+            foreach (var persona in lista)
             {
-                Console.WriteLine(reader.GetString("nombre"));
+                Console.Write(persona.Dni);
+                Console.Write(persona.Nombre);
+                Console.WriteLine(persona.Apellidos);
+            }
+
+            List<PersonaNueva> listaordenada = repo.BuscarTodasOrdenadas();
+            foreach (var persona in listaordenada)
+            {
+                Console.Write(persona.Apellidos);
+                Console.Write(persona.Nombre);
+                Console.WriteLine(persona.Dni);
+                
             }
             Console.WriteLine("hola");
+
+            PersonaNueva pnueva=new PersonaNueva("101","angelito","perez");
+            repo.Insertar(pnueva);
+
+            List<PersonaNueva> lista2 = repo.BuscarTodasOrdenadas();
+            foreach (var persona in lista2)
+            {
+                Console.Write(persona.Apellidos);
+                Console.Write(persona.Nombre);
+                Console.WriteLine(persona.Dni);
+            }
+            
+            PersonaNueva pBorrar =new PersonaNueva("101","angelito","perez");
+            repo.BorrarPersona(pBorrar);
+                    
+
+
         }
 
     }
