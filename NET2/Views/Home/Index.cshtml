@@ -17,4 +17,16 @@
 @ViewBag.Persona.Dni
 @ViewBag.Persona.Nombre
 @ViewBag.Persona.Apellidos
+
+<table border="1px solid black">
+@foreach ( var persona in ViewBag.lista2)
+{
+    <tr>
+    <td>@persona.Dni</td>
+    <td>@persona.Nombre</td>
+    <td>@persona.Apellidos</td>
+    
+    </tr>
+}
+</table>
 </div>

@@ -1,6 +1,5 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using net2.Models;
 using NET2.Models;
 
 namespace NET2.Controllers;

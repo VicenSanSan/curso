@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace net2.Models{
+namespace NET2.Models{
     public class Persona{
         public string Dni{get;set;}
         public string Nombre {get;set;}
