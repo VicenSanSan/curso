@@ -27,6 +27,8 @@ public class PersonaController : Controller
     {
         return View();
     }
+
+    
     public IActionResult Insertar(Persona persona)
 
     {

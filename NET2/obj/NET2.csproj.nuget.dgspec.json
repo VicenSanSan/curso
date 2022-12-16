@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Agencia Desarrollo\\Desktop\\CURSO\\vicenta\\NET2\\NET2.csproj": {}
+    "C:\\Users\\Agencia Desarrollo\\Desktop\\CURSO\\vicenta\\net2\\NET2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Agencia Desarrollo\\Desktop\\CURSO\\vicenta\\NET2\\NET2.csproj": {
+    "C:\\Users\\Agencia Desarrollo\\Desktop\\CURSO\\vicenta\\net2\\NET2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Agencia Desarrollo\\Desktop\\CURSO\\vicenta\\NET2\\NET2.csproj",
+        "projectUniqueName": "C:\\Users\\Agencia Desarrollo\\Desktop\\CURSO\\vicenta\\net2\\NET2.csproj",
         "projectName": "NET2",
-        "projectPath": "C:\\Users\\Agencia Desarrollo\\Desktop\\CURSO\\vicenta\\NET2\\NET2.csproj",
+        "projectPath": "C:\\Users\\Agencia Desarrollo\\Desktop\\CURSO\\vicenta\\net2\\NET2.csproj",
         "packagesPath": "C:\\Users\\Agencia Desarrollo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Agencia Desarrollo\\Desktop\\CURSO\\vicenta\\NET2\\obj\\",
+        "outputPath": "C:\\Users\\Agencia Desarrollo\\Desktop\\CURSO\\vicenta\\net2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Agencia Desarrollo\\AppData\\Roaming\\NuGet\\NuGet.Config"
