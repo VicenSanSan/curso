@@ -23,9 +23,19 @@ public class PersonaController : Controller
     
     }
 
-    public IActionResult Privacy()
+    public IActionResult FormularioInsertar()
     {
         return View();
+    }
+    public IActionResult Insertar(Persona persona)
+
+    {
+        PersonaRepository repositorio= new PersonaRepository();
+        repositorio.Insertar(persona);
+        List<Persona> lista= repositorio.BuscarTodas();
+        ViewBag.lista=lista;
+
+        return View("Index");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SuhOs9/VxACRTKyq0aw9brIDkn+HgCAw/WdaotSut9bUyp3dOu8QzfeVfMGpKe1r/ObM6slsvdxNwLIqk1s3Hw==",
+  "dgSpecHash": "9nbUwjUJJ6mMHFYf31fuadH7EdF6VVXKX25ZtoWO3acTjLXpx1Mfh0skzQjptZip4mkbuJRiNqlbu78m/EBeeA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Agencia Desarrollo\\Desktop\\CURSO\\vicenta\\net2\\NET2.csproj",
+  "projectFilePath": "C:\\Users\\Agencia Desarrollo\\Desktop\\CURSO\\vicenta\\NET2\\NET2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Agencia Desarrollo\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Agencia Desarrollo\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

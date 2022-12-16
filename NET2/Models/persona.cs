@@ -12,5 +12,6 @@ namespace NET2.Models{
             Nombre=nombre;
             Apellidos=apellidos; 
         }
+        public Persona() {}
     }
 }
