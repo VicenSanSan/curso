@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Personas de la lista";
 }
 
 <table class="table table-striped table-hover">
@@ -21,10 +21,10 @@
         <td>@persona.Nombre</td>
         <td>@persona.Apellidos</td>
         <td><a href="VerPersona" class="btn btn-info">Ver</a></td>
-        <td><a href="BorrarPersona" class="btn btn-danger">Borrar</a></td>
+        <td><a href="/persona/borrar?dni=@persona.Dni" class="btn btn-danger">Borrar</a></td>
 
     </tr>
     }
 </tbody>
 </table>
-<a href="persona/FormularioInsertar">Formulario Insertar Persona</a>
+<a href="/persona/FormularioInsertar">Formulario Insertar Persona</a>

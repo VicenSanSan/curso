@@ -40,6 +40,19 @@ public class PersonaController : Controller
         return View("Index");
     }
 
+public IActionResult Borrar (String dni)
+
+    {
+        PersonaRepository repositorio= new PersonaRepository();
+        repositorio.Borrar(new Persona(dni));
+        List<Persona> lista= repositorio.BuscarTodas();
+        ViewBag.lista=lista;
+
+        return View("Index");
+    }
+
+
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

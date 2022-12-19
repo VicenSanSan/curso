@@ -7,11 +7,14 @@ namespace NET2.Models{
         public string Nombre {get;set;}
         public string Apellidos {get;set;}
 
-        public Persona(string dni,string nombre, string apellidos){
+    public Persona(string dni,string nombre, string apellidos){
             Dni=dni;
             Nombre=nombre;
             Apellidos=apellidos; 
         }
-        public Persona() {}
+    public Persona() {}
+    public Persona(string dni){
+            Dni=dni;
+        }
     }
 }

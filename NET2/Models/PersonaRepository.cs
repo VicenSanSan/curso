@@ -55,6 +55,26 @@ namespace NET2.Models
 
         }
 
+
+        public void Borrar(Persona persona)
+        {
+            var sb = new MySqlConnectionStringBuilder
+            {
+                Server = "localhost",
+                UserID = "root",
+                Password = "",
+                Port = 3306,
+                Database = "curso2"
+            };
+            MySqlConnection conn = new MySqlConnection(sb.ConnectionString);
+            conn.Open();
+
+            var comando = conn.CreateCommand();
+            comando.CommandText = "delete from Personas where dni='" +persona.Dni+"'";
+            comando.ExecuteNonQuery();
+
+        }
+
     }
 }
 
