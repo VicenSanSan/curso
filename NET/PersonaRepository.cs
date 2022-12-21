@@ -103,6 +103,24 @@ public class PersonaRepository
         comando.ExecuteNonQuery();
         
     }
+    public void Ver (PersonaNueva persona)
+    {
+        var sb = new MySqlConnectionStringBuilder
+        {
+            Server = "localhost",
+            UserID = "root",
+            Password = "",
+            Port = 3306,
+            Database = "curso2"
+        };
+        MySqlConnection conn = new MySqlConnection(sb.ConnectionString);
+        conn.Open();
+
+        var comando = conn.CreateCommand();
+        comando.CommandText = "select from Personas where dni=  ('"+ persona.Dni + "'";
+        comando.ExecuteNonQuery();
+        
+    }
 
 
 
